@@ -11,6 +11,25 @@ body{
   background-repeat: no-repeat;
 
 }
+div {
+    display: block;
+}
+
+  #nav {
+text-align: center;
+  	margin:0;
+  	padding:0;
+    border-color: #000;
+    border-style: solid;
+    border-width: medium;
+  }
+
+  li {
+    text-decoration-color:#000;
+  	display: inline;
+  	padding:0;
+  	margin:5px;
+  }
 
   #block {
   	width: 3%;
