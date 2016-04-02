@@ -1,6 +1,15 @@
 h1{
 margin: auto;
-color: red;
-font-size: 32px;
-
+font-size: 38px;
+font-family: sans-serif;
+position: fixed;
 }
+body{
+  background-image: url("images.jpg");
+}
+
+  #block {
+  	width: 10%;
+  	float: left;
+  	margin-right: 10px;
+  }
