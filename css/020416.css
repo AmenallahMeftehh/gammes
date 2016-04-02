@@ -1,0 +1,47 @@
+h1{
+font-size: 38px;
+font-family: sans-serif;
+text-align: center;
+}
+body{
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	 font-size: 13px;
+   color: #222;
+ }
+ header{
+   position: relative;
+ }
+ #dd{
+   background-image: url("images/2.jpg");
+ }
+
+#bg {
+  position: inherit;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+div {
+    display: block;
+}
+#nav {
+  	margin:0;
+  	padding:0;
+  }
+ul{
+  margin-top: 1px;
+  text-align: center;
+}
+li {
+    text-decoration-color:#000;
+  	display: inline;
+  	padding:0;
+  	margin:5px;
+  }
+footer{
+  font-size: 20px;
+  font-family: serif;
+  text-align: center;
+  bottom: 0;
+}
