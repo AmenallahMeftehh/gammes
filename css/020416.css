@@ -12,9 +12,11 @@ body{
    background-size: cover;
    /*opacity: 0.4;
    filter: alpha(opacity=40);*/
-
  }
-
+fieldset{
+  background-color: #FFF;
+  margin-top: 100px;
+}
  header{
    position: relative;
  }
