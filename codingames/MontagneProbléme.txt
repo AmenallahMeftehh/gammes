@@ -1,0 +1,25 @@
+
+while (true) {
+ 
+   var maxMont = 0;
+   
+ var maxMontInd = 0;
+  
+  for (var i = 0; i < 8; i++) {
+     
+   var mountainH = parseInt(readline()); // represents the height of one mountain, from 9 to 0.
+    
+ if (mountainH>maxMont)
+{
+  
+  maxMont=mountainH;
+  
+  maxMontInd = i;
+   
+ }
+
+}
+
+    print(maxMontInd); // The number of the mountain to fire on.
+
+}
