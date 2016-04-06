@@ -1,0 +1,40 @@
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ * ---
+ * Hint: You can use the debug stream to print initialTX and initialTY, if Thor seems not follow your orders.
+ **/
+
+var inputs = readline().split(' ');
+var lightX = parseInt(inputs[0]); // the X position of the light of power
+var lightY = parseInt(inputs[1]); // the Y position of the light of power
+var initialTX = parseInt(inputs[2]); // Thor's starting X position
+var initialTY = parseInt(inputs[3]); // Thor's starting Y position
+
+// game loop
+while (true) {
+    var remainingTurns = parseInt(readline()); // The remaining amount of turns Thor can move. Do not remove this line.
+    var directionX=""; //declaration de la variable directionX pour avoir la direction effectuée Nord Sud Ouest Est selon l'axe des X
+
+	var directionY=""; //declaration de la variable directionY pour avoir la direction effectuée Nord Sud Ouest Est selon l'axe des Y
+	
+    if(lightY<initialTY) //condition If pour vérifier les 2 valeurs de thor et de light
+    {directionY = "N";
+    initialTY--;    } //decrementer la position intiale Y de thor
+    
+    else if(lightY>initialTY)//condition else If pour vérifier les 2 valeurs de thor et de light
+    {directionY = "S";
+    initialTY++;    }//incrementer la position intiale Y de thor
+    
+    if(lightX<initialTX) //condition If pour vérifier les 2 valeurs de thor et de light
+    {directionX = "W";
+    initialTX--;    } //decrementer la position intiale Y de thor
+    
+    else if(lightX>initialTX) //condition else If pour vérifier les 2 valeurs de thor et de light
+    {directionX = "E";
+    initialTX++;    } //incrementer la position intiale X de thor
+    
+    
+//affichage des directions selon les axes des X et Y 
+    print(directionY+directionX); // A single line providing the move to be made: N NE E SE S SW W or NW
+}
