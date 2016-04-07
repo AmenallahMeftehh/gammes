@@ -1,0 +1,41 @@
+
+
+var road = parseInt(readline()); // the length of the road before the gap.
+
+var gap = parseInt(readline()); // the length of the gap.
+
+var platform = parseInt(readline()); // the length of the landing platform.
+
+
+// game loop
+
+while (true) {
+   
+ var speed = parseInt(readline()); // the motorbike's speed.
+ 
+   var coordX = parseInt(readline()); // the position on the road of the motorbike.
+  
+  var valeur ="";
+
+if(coordX>road){
+    valeur="SLOW";}
+   
+ else if ((coordX+speed)>road){
+  valeur="JUMP";
+        }
+   
+     else if(speed<=gap){
+ valeur="SPEED";}
+       
+      else if(speed>gap+1){
+  valeur="SLOW"; }
+   
+ else
+{valeur="WAIT";
+    }
+
+	
+
+   
+ print(valeur); // A single line containing one of 4 keywords: SPEED, SLOW, JUMP, WAIT.
+}
