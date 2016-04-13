@@ -31,18 +31,21 @@ fieldset{
 div {
     display: block;
 }
-#nav {
-  	margin:0;
-  	padding:0;
-  }
-  figure{
-margin-top: 150px;
+  .figure1{
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: grey;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    padding:3%;
   }
 ul{
   margin-top: 1px;
   text-align: center;
   color: #000;
-text-shadow: 2px 2px 8px #FF0000;
+  text-shadow: 2px 2px 8px #FF0000;
 }
 li {
   color: #FFF;
@@ -55,6 +58,12 @@ li {
     color: #FFF;
     padding: 8px 0 8px 16px;
     text-decoration: none;
+}
+.img{
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: grey;
+  margin-top: 10px;
 
 }
 footer{
