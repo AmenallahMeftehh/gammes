@@ -1,13 +1,11 @@
 
-      <figure class="figure1" >
-        <img class ='img'src="../images/pc/pc-portable-asus-.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-asus.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-dell-inspiron.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-hp-.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-lenovo.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-thinkpad.jpg	"  />
-        <img class ='img'src="../images/pc/ultrabook-tablette-acer-aspire-switch.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-dell-inspiron1.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-dell-inspiron-.jpg"  />
-        <img class ='img'src="../images/pc/pc-portable-lenovo.jpg"  />
-      </figure>
+<div ng-repeat="ordi in ordinateurs" class="figure1 col-md-3">
+  <!-- <div class="col-md-4"> -->
+    <h2>{{ordi.nom}}</h2>
+    <img class="imageordi" ng-src="../images/pc/{{ordi.image}}" />
+    <p>
+      {{ordi.description}}
+    </p>
+  <!-- </div> -->
+
+</div>

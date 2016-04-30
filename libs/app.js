@@ -13,13 +13,14 @@ $routeProvider
   templateUrl:'pages/impression.html'
 })
 .when('/ordinateur',{
-  templateUrl:'pages/ordinateur.html'
-})
+  templateUrl:'pages/ordinateur.html',
+  controller:'ordinateurController'})
 .when('/reseaux',{
   templateUrl:'pages/reseaux.html'
 })
 .when('/telephonies',{
   templateUrl:'pages/telephonies.html'
+
 })
 .otherwise({redirectTo:'/index'})
 }]);
